@@ -108,7 +108,7 @@ export default function Login() {
                     </Button>
                 </CardActions>
             </Card>
-            <Card variant="outlined" className={classes.card2}>
+            <Card variant="outlined" style={{height:'auto'}} className={`dont-have ${classes.card2} `}>
                 <CardContent>
                     <Typography className={classes.text1} variant="subtitle1">
                         Don't have an account ? <Link to="/signup" style={{textDecoration:'none'}}>Signup</Link>

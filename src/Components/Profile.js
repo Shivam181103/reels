@@ -4,9 +4,9 @@ import { database } from '../firebase'
 import { CircularProgress } from '@mui/material';
 import Navbar from './Navbar' 
 import Typography from '@mui/material/Typography';
-import Avatar from '@mui/material/Avatar';
-import Like from './Like'
-import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
+// import Avatar from '@mui/material/Avatar';
+// import Like from './Like'
+// import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 import Dialog from '@mui/material/Dialog';
 import Card from '@mui/material/Card';
 import Like2 from './Like2';

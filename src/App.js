@@ -10,10 +10,11 @@ import Profile from './Components/Profile';
  
 
 function App() {
-  return (
+  return ( 
     <BrowserRouter>
     <AuthProvider>
       <Switch>
+        
         <Route path="/login" component={Login}/>
         <Route path="/signup" component={Signup}/>
         <PrivateRoute path="/profile/:id" component={Profile}/>

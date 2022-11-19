@@ -25,13 +25,13 @@ function Ioa() {
     return (
         <div className="video-conatinerss">
             <div className="videos">
-                <video src={vid1} muted="muted" style={{height:'85vh'}}/>
+                <video src={vid1}   style={{height:'85vh'}}/>
             </div>
             <div className="videos">
-                <video src={vid2} muted="muted" style={{height:'85vh'}}/>
+                <video src={vid2}   style={{height:'85vh'}}/>
             </div>
             <div className="videos">
-                <video src={vid3} muted="muted" style={{height:'85vh'}}/>
+                <video src={vid3}   style={{height:'85vh'}}/>
             </div>
         </div>
     )

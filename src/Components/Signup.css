@@ -19,8 +19,23 @@
 .insta-logo img{
     width: 15vw;
 }
-
+.have-account{
+  
+    padding: 0.2rem 0;
+}
+.have-account div{
+    margin: 0;
+    padding: 0;
+}
 @media only screen and (max-width:620px){
+    .signupCard{
+        width: 60%;
+    }
+    .insta-logo img{
+        width: 35%;
+    }
+}
+@media only screen and (max-width:750px) and (min-width:620px){
     .signupCard{
         width: 60%;
     }

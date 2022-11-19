@@ -2,9 +2,9 @@ import * as React from 'react';
 import {useState,useContext} from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
+// import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
+import { Button, CardActions } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import Alert from '@mui/material/Alert';
 import './Signup.css'
@@ -14,7 +14,7 @@ import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 import {Link,useHistory} from  'react-router-dom';
 import { AuthContext } from '../Context/AuthContext';
 import { database,storage } from '../firebase';
-
+ 
 export default function Signup() {
     const useStyles = makeStyles({
         text1:{
@@ -96,7 +96,7 @@ export default function Signup() {
                     <Typography className={classes.text1} variant="subtitle1">
                         Sign up to see photos and videos from your friends
                     </Typography>
-                    {error!='' && <Alert severity="error">{error}</Alert>}
+                    {error!=='' && <Alert severity="error">{error}</Alert>}
                     <TextField id="outlined-basic" label="Email" variant="outlined" fullWidth={true} margin="dense" size="small" value={email} onChange={(e)=>setEmail(e.target.value)}/>
                     <TextField id="outlined-basic" label="Password" variant="outlined" fullWidth={true} margin="dense" size="small" value={password} onChange={(e)=>setPassword(e.target.value)}/>
                     <TextField id="outlined-basic" label="Full Name" variant="outlined" fullWidth={true} margin="dense" size="small"value={name} onChange={(e)=>setName(e.target.value)}/>
@@ -116,7 +116,7 @@ export default function Signup() {
                     </Typography>
                 </CardContent>
             </Card>
-            <Card variant="outlined" className={classes.card2}>
+            <Card variant="outlined" className={`have-account ${classes.card2}`}>
                 <CardContent>
                     <Typography className={classes.text1} variant="subtitle1">
                         Having an account ? <Link to="/login" style={{textDecoration:'none'}}>Login</Link>

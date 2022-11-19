@@ -39,11 +39,14 @@ function Posts({userData}) {
     const callback = (entries) => {
         entries.forEach((entry)=>{
             let ele = entry.target.childNodes[0]
-            console.log(ele)
+             
             ele.play().then(()=>{
-                if(!ele.paused && !entry.isIntersecting){
-                    ele.pause()
-                }
+            if(!ele.paused && !entry.isIntersecting){
+                ele.pause()
+            }
+
+            }).catch(()=>{
+                 
             })
         })
     }
@@ -65,7 +68,7 @@ function Posts({userData}) {
                     {
                         posts.map((post,index)=>(
                             <React.Fragment key={index}>
-                                {console.log(post)}
+                                
                                 <div className="videos">
                                     <Video src={post.pUrl} id={post.pId}/>
                                     <div className="fa" style={{display:'flex'}}>
